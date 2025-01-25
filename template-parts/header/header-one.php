@@ -6,7 +6,7 @@
 ?>
 <header id="masthead" class="site-header header-one" style="background-image: url(<?php echo esc_url( get_header_image() ); ?>);">
 	<?php
-	$gettopbar  = get_theme_mod( 'top_header_on_off', true );
+	$gettopbar  = get_theme_mod( 'top_header_on_off', false );
 	$getAddressValue  = get_theme_mod( 'top_header_address', '3486 Oakway Lane Pomona, CA 91766' );
 	$getPhoneValue  = get_theme_mod( 'top_header_phone', '+1 763-227-5032' );
 	$social_facebook  = get_theme_mod( 'social_facebook', 'https://facebook.com/' );
