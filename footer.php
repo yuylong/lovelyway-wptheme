@@ -22,9 +22,9 @@ $show_footer_social_links = get_theme_mod('show_footer_social_links', false);
 			<div class="row">
 				<div class="col-md-12 align-self-center">
 					<div class="site-info text-center">
-						<div class="site-copyright-text d-inline-block" style="display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;">
+						<div class="site-copyright-text" style="display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;">
 							<div style="margin-right:8px;">
-								<img src="<?php echo lwmain_get_image_url_by_filename('beian-icon.png') ?>" height="14px" />
+								<img src="<?php echo lwmain_get_image_url_by_filename('beian-icon.png') ?>" style="height:14px" />
 								<a href="https://beian.mps.gov.cn/#/query/webSearch?code=21011102000357" rel="noreferrer" target="_blank">辽公网安备21011102000357号</a>
 							</div>|
 							<div style="margin-right:8px;margin-left:8px;">
