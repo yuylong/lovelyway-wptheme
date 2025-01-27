@@ -23,14 +23,17 @@ $show_footer_social_links = get_theme_mod('show_footer_social_links', false);
 				<div class="col-md-12 align-self-center">
 					<div class="site-info text-center">
 						<div class="site-copyright-text d-inline-block">
-						<?php
-						echo wp_kses_post( get_theme_mod('copyright_text', __( 'Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2023. All rights reserved.', 'fashion-blogging' )));
-						?>
+							<div style="margin-right:8px;">
+								<img src="<?php lwmain_get_image_url_by_filename('beian-icon.png') ?>" height="14px" />
+								<a href="https://beian.mps.gov.cn/#/query/webSearch?code=21011102000357" rel="noreferrer" target="_blank">辽公网安备21011102000357号</a>
+							</div>|
+							<div style="margin-right:8px;margin-left:8px;">
+								<a href="https://beian.miit.gov.cn" target="_blank">辽ICP备2024019965号-1</a>
+							</div>|
+							<div style="margin-left:8px;">Copyright © 2023-2025 Yulong Yu. All rights reserved.</div>
+							</div>
 						</div>
 					</div><!-- .site-info -->
-					<div class="theme-credit-link-wrapper text-center">
-						<span class="themeby"><?php esc_html_e('Theme By: ', 'fashion-blogging');?><a href="<?php echo esc_url(fashion_blogging_author_uri());?>"><?php echo esc_html(fashion_blogging_author());?></a></span>
-					</div>
 				</div>
 			</div>
 		</div>

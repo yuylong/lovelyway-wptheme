@@ -223,3 +223,25 @@ function fashion_blogging_author_uri(){
  */
 add_filter( 'wp_lazy_loading_enabled', '__return_false' );
 
+function lwmain_get_image_url_by_filename($filename) {
+    $args = array(
+        'post_type'      => 'attachment',
+        'posts_per_page' => 1,
+        'post_status'    => 'inherit',
+        'meta_query'     => array(
+            array(
+                'key'     => '_wp_attached_file',
+                'value'   => $filename,
+                'compare' => 'LIKE',
+            ),
+        ),
+    );
+
+    $attachments = get_posts($args);
+
+    if ($attachments) {
+        return wp_get_attachment_url($attachments[0]->ID);
+    } else {
+        return 'No attachment found with that filename.';
+    }
+}
