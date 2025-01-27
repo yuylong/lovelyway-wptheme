@@ -21,7 +21,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'top_header_bgc_color',
     'label'       => esc_html__( 'Top Header Background Color', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => '#909090',
+    'default'     => '#606060',
     'transport'   => 'auto',
     'output' => array(
         array(
