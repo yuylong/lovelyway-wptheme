@@ -9,7 +9,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'top_header_on_off',
     'label'       => esc_html__( 'Show/Hide Top Header Section', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => 1,
+    'default'     => 0,
     'choices'     => [
         'on'  => esc_html__( 'Show', 'fashion-blogging' ),
         'off' => esc_html__( 'Hide', 'fashion-blogging' ),
@@ -21,7 +21,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'top_header_bgc_color',
     'label'       => esc_html__( 'Top Header Background Color', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => '#fcb900',
+    'default'     => '#909090',
     'transport'   => 'auto',
     'output' => array(
         array(
@@ -36,7 +36,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'top_header_address',
     'label'       => esc_html__( 'Top Header Address', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => esc_html__( '3486 Oakway Lane Pomona, CA 91766', 'fashion-blogging' ),
+    'default'     => esc_html__( 'lovelyway.cn', 'fashion-blogging' ),
     'transport'   => 'refresh',
 ] );
 
@@ -45,7 +45,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'top_header_phone',
     'label'       => esc_html__( 'Top Header Contact', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => esc_html__( '+1 763-227-5032', 'fashion-blogging' ),
+    'default'     => esc_html__( '+1 123-456-7890', 'fashion-blogging' ),
     'transport'   => 'refresh',
 ] );
 
@@ -76,7 +76,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'header_bgc_color',
     'label'       => __( 'Header Background Color', 'fashion-blogging' ),
     'section'     => 'fashion_blogging_theme_header_settings',
-    'default'     => '#ffffff',
+    'default'     => '#aa2d2d',
     'transport'   => 'auto',
     'output' => array(
         array(
@@ -97,7 +97,7 @@ Kirki::add_field( 'fashion_blogging_config', [
         'font-size'      => '1.25rem',
         'line-height'    => '1.6',
         'letter-spacing' => '0px',
-        'color'          => '#000000',
+        'color'          => '#eeeeee',
         'text-transform' => 'none',
     ],
     'transport'   => 'auto',
@@ -119,7 +119,7 @@ Kirki::add_field( 'fashion_blogging_config', [
         'font-size'      => '1rem',
         'line-height'    => '1.4',
         'letter-spacing' => '0px',
-        'color'          => '#000000',
+        'color'          => '#eeeeee',
         'text-transform' => 'none',
     ],
     'transport'   => 'auto',
@@ -141,7 +141,7 @@ Kirki::add_field( 'fashion_blogging_config', [
         'font-size'      => '1rem',
         'line-height'    => '1.6',
         'letter-spacing' => '0px',
-        'color'          => '#000000',
+        'color'          => '#eeeeee',
         'text-transform' => 'none',
     ],
     'transport'   => 'auto',
