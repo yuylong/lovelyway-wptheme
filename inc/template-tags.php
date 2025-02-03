@@ -58,7 +58,7 @@ if ( ! function_exists( 'fashion_blogging_posted_by' ) ) :
 		}
 		$postedBy = sprintf(
 			$posted_by_format,
-			$author_lead . get_post_meta( get_the_ID(), 'lw_author', false )
+			$author_lead . get_post_meta( get_the_ID(), 'lw_author', true )
 		);
 		echo '<span class="posted_by">' . wp_kses_post( $postedBy ) . '</span>';
 	}
