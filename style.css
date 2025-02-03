@@ -6107,15 +6107,16 @@ span.dot {
 
 .fashion-blogging-standard-post__blog-meta>span.posted_by {
     display: inline-block;
+    color: #404040;
 }
 
 .fashion-blogging-standard-post__blog-meta>span.posted_by a {
     display: block;
-    color: #000000;
+    color: #404040;
 }
 
 .fashion-blogging-standard-post__blog-meta>span.posted_by a:hover {
-    color: #000000;
+    color: #404040;
 }
 
 .fashion-blogging-standard-post__blog-meta>span.posted_by a img {
@@ -6126,18 +6127,22 @@ span.dot {
 .fashion-blogging-standard-post__blog-meta>span.posted_by a i {
     display: inline-block;
     vertical-align: top;
-    color: #ffbb67;
+    color: #404040;
     font-weight: 700;
 }
 
+.fashion-blogging-standard-post__blog-meta>span.posted-on {
+    color: #505050;
+}
+
 .fashion-blogging-standard-post__blog-meta>span.posted-on a {
-    color: #ffbb67;
+    color: #505050;
 }
 
 .fashion-blogging-standard-post__blog-meta>span.posted-on i.line {
     height: 15px;
     width: 1px;
-    background: #ffbb67;
+    background: #505050;
     display: inline-block;
     position: relative;
     left: -7px;
@@ -9272,12 +9277,13 @@ ul.recent-post-widget li .recent-widget-content .cat-links a:focus {
 
 ul.recent-post-widget li .recent-widget-content .posted_by {
     display: inline-block;
+    color: #aa2d2d;
 }
 
 ul.recent-post-widget li .recent-widget-content .posted_by a {
     display: block;
     text-decoration: none;
-    color: #ffbb67;
+    color: #aa2d2d;
 }
 
 ul.recent-post-widget li .recent-widget-content .posted_by a img {
@@ -9337,8 +9343,8 @@ li.fashion-blogging-recent-post.no-post-thumbnail .recent-widget-content a:focus
     background-size: 100% 1px;
 }
 
-li.fashion-blogging-recent-post.no-post-thumbnail .recent-widget-content .posted_by a i {
-    color: #000000;
+li.fashion-blogging-recent-post.no-post-thumbnail .recent-widget-content .posted_by i {
+    color: #aa2d2d;
 }
 
 @media only screen and (max-width: 75rem) {
