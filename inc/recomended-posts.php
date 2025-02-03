@@ -72,7 +72,7 @@ function fashion_blogging_cats_related_post() {
                                     <div class="fashion-blogging-standard-post__blog-meta">
                                         <?php
                                         if (true == $post_el_is_on['show_post_author']) :
-                                            fashion_blogging_posted_by( true );
+                                            fashion_blogging_posted_by( false );
                                         endif;
                                         if(true == $post_el_is_on['show_post_date']) :
                                             fashion_blogging_posted_on();

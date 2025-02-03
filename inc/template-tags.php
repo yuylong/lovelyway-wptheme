@@ -50,18 +50,15 @@ if ( ! function_exists( 'fashion_blogging_time' ) ) {
 	}
 }
 if ( ! function_exists( 'fashion_blogging_posted_by' ) ) :
-	function fashion_blogging_posted_by( $author_image = true ) {
-		$posted_by_format = '<a href="%1$s">%2$s %3$s</a>';
-		$post_author_id   = get_post_field( 'post_author', get_queried_object_id() );
-		$get_author_image = '<span class="post-author-image"> ' . get_avatar( get_the_author_meta( 'ID' ), 30 ) . '</span> ';
-		if ( false === $author_image ) {
-			$get_author_image = __( 'Posted by', 'fashion-blogging' );
+	function fashion_blogging_posted_by( $has_author_lead = true ) {
+		$posted_by_format = '<i>%1$s</i>';
+		$author_lead = esc_html ('文 / ');
+		if ( false === $has_author_lead ) {
+			$author_lead = '';
 		}
 		$postedBy = sprintf(
 			$posted_by_format,
-			esc_url( get_author_posts_url( get_the_author_meta( $post_author_id ), get_the_author_meta( 'user_nicename' ) ) ),
-			$get_author_image,
-			'<i>' . esc_html( get_the_author_meta( 'display_name', $post_author_id ) ) . '</i>'
+			$author_lead . get_the_post_meta( get_the_ID(), 'lw_author', false )
 		);
 		echo '<span class="posted_by">' . wp_kses_post( $postedBy ) . '</span>';
 	}

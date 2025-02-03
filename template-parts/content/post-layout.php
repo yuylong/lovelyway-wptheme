@@ -67,7 +67,7 @@ $post_el_is_on = array(
 				<div class="fashion-blogging-standard-post__blog-meta<?php echo esc_attr($nolinebetweenmeta);?>">
 					<?php
 					if (true == $post_el_is_on['show_post_author']) :
-						fashion_blogging_posted_by( true );
+						fashion_blogging_posted_by( false );
 					endif;
 					if(true == $post_el_is_on['show_post_date']) :
 						fashion_blogging_posted_on();
