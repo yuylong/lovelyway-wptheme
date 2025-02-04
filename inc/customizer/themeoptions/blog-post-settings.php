@@ -59,6 +59,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'section'     => 'post_loop_settings_section',
     'default'     => '1',
 ] );
+
 Kirki::add_field( 'fashion_blogging_config', [
     'type'        => 'toggle',
     'settings'    => 'show_post_excerpt',
@@ -74,3 +75,14 @@ Kirki::add_field( 'fashion_blogging_config', [
     'section'     => 'post_loop_settings_section',
     'default'     => '1',
 ] );
+
+Kirki::add_field( 'fashion_blogging_config', [
+	'type'        => 'number',
+	'settings'    => 'posts_per_page',
+	'label'       => esc_html__( 'Posts Per Page', 'fashion-blogging' ),
+	'section'     => 'post_loop_settings_section',
+	'default'     => 12,
+	'priority'    => 10,
+	'sanitize_callback' => 'absint',
+] );
+?>

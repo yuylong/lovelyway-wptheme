@@ -161,4 +161,17 @@ if ( class_exists( 'woocommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce-modification.php';
 }
 
+/**
+ * Adjust posts per page
+ */
+function lwmain_custom_posts_per_page( $query ) {
+	if ( ! is_admin() && $query->is_main_query() ) {
+		if ( is_archive() ) {
+			$posts_per_page = get_theme_mod( 'posts_per_page', 12 );
+			$query->set( 'posts_per_page', $posts_per_page );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'lwmain_custom_posts_per_page' );
+
 add_filter( 'wp_lazy_loading_enabled', '__return_false' );
