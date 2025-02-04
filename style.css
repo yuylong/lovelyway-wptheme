@@ -6516,6 +6516,7 @@ a.fa.fa-search.searchicon:focus {
     content: "\f078";
     font-family: 'FontAwesome';
     font-size: 10px;
+    color: #f1f1f1;
     top: 0;
     right: 0;
     display: flex;
@@ -6548,7 +6549,6 @@ a.fa.fa-search.searchicon:focus {
 #cssmenu>ul>li>a {
     padding: 0rem 1.0625rem;
     text-decoration: none;
-    color: #000000;
     font-weight: 400;
     text-transform: uppercase;
     transition: .4s;
@@ -6570,9 +6570,6 @@ a.fa.fa-search.searchicon:focus {
     height: 0.125rem;
     display: block;
     background: transparent;
-    content: '\f107';
-    font-family: fontawesome;
-    font-weight: 700;
 }
 
 
