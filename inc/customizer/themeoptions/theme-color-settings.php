@@ -41,6 +41,25 @@ Kirki::add_field( 'fashion_blogging_config', [
 
 Kirki::add_field( 'fashion_blogging_config', [
 	'type'        => 'color',
+	'settings'    => 'author_text_color',
+	'label'       => __( 'Author Text Color', 'fashion-blogging' ),
+	'section'     => 'fashion_blogging_theme_color',
+	'transport'   => 'auto',
+	'default'     => '#505050',
+	'output' => array(
+		array(
+			'element'  => '.fashion-blogging-standard-post__blog-meta>span.posted_by i, .fashion-blogging-standard-post__blog-meta>span.posted-on a',
+			'property' => 'color',
+		),
+		array(
+			'element'  => '.fashion-blogging-standard-post__blog-meta>span.posted-on i.line',
+			'property' => 'background-color',
+		),
+	),
+] );
+
+Kirki::add_field( 'fashion_blogging_config', [
+	'type'        => 'color',
 	'settings'    => 'footer_bg_color',
 	'label'       => __( 'Footer Background Color', 'fashion-blogging' ),
 	'section'     => 'fashion_blogging_theme_color',
