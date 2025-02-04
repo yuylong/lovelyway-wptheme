@@ -6778,13 +6778,13 @@ a.fa.fa-search.searchicon:focus {
 }*/
 
 #cssmenu.small-screen ul ul li a {
-    color: #000000;
+    color: #f1f1f1;
     background: none;
 }
 
 #cssmenu.small-screen ul ul li:hover>a,
 #cssmenu.small-screen ul ul li.active>a {
-    color: #000000;
+    color: #f1f1f1;
 }
 
 #cssmenu.small-screen ul ul,
