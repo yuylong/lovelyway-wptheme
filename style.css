@@ -6110,6 +6110,11 @@ span.dot {
     color: #404040;
 }
 
+.fashion-blogging-standard-post__blog-meta>span.posted_by i {
+    display: block;
+    color: #404040;
+}
+
 .fashion-blogging-standard-post__blog-meta>span.posted_by a {
     display: block;
     color: #404040;

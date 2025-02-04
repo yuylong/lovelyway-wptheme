@@ -10,7 +10,7 @@ Kirki::add_field( 'fashion_blogging_config', [
 	'settings'    => 'primary_color',
 	'label'       => __( 'Primary Background Color', 'fashion-blogging' ),
 	'section'     => 'fashion_blogging_theme_color',
-	'default'     => '#ffbb67',
+	'default'     => '#aa2d2d',
 	'transport'   => 'auto',
 	'output' => array(
 		array(
@@ -30,15 +30,11 @@ Kirki::add_field( 'fashion_blogging_config', [
 	'label'       => __( 'Primary Text Color', 'fashion-blogging' ),
 	'section'     => 'fashion_blogging_theme_color',
 	'transport'   => 'auto',
-	'default'     => '#ffbb67',
+	'default'     => '#aa2d2d',
 	'output' => array(
 		array(
-			'element'  => '.fashion-blogging-standard-post__blog-meta>span.posted_by a i, .fashion-blogging-standard-post__blog-meta>span.posted-on a, .widget-area .widget.widget_rss a.rsswidget, .widget ul li a:hover, .widget ul li a:visited, .widget ul li a:focus, .widget ul li a:active, .widget ol li a:hover, .widget ol li a:visited, .widget ol li a:focus, .widget ol li a:active, .fashion-blogging-standard-post .fashion-blogging-standard-post__full-summery a, a:hover, a:focus, a:active, span.opacity-none:before, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price, span.opacity-none a:before',
+			'element'  => '.widget-area .widget.widget_rss a.rsswidget, .widget ul li a:hover, .widget ul li a:visited, .widget ul li a:focus, .widget ul li a:active, .widget ol li a:hover, .widget ol li a:visited, .widget ol li a:focus, .widget ol li a:active, .fashion-blogging-standard-post .fashion-blogging-standard-post__full-summery a, a:hover, a:focus, a:active, span.opacity-none:before, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price, span.opacity-none a:before',
 			'property' => 'color',
-		),
-		array(
-			'element'  => '.fashion-blogging-standard-post__blog-meta>span.posted-on i.line',
-			'property' => 'background-color',
 		),
 	),
 ] );
@@ -48,7 +44,7 @@ Kirki::add_field( 'fashion_blogging_config', [
 	'settings'    => 'footer_bg_color',
 	'label'       => __( 'Footer Background Color', 'fashion-blogging' ),
 	'section'     => 'fashion_blogging_theme_color',
-	'default'     => '#091a44',
+	'default'     => '#aa2d2d',
 	'transport'   => 'auto',
 	'output' => array(
 		array(
@@ -107,7 +103,7 @@ Kirki::add_field( 'fashion_blogging_config', [
 	'transport'   => 'auto',
 	'output' => array(
 		array(
-			'element'  => '.site-copyright',
+			'element'  => '.site-copyright, .site-copyright a',
 			'property' => 'color',
 		),
 	),
