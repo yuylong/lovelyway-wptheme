@@ -48,7 +48,7 @@
 	<div class="main-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 align-self-center">
+				<div class="col-md-6 align-self-center">
 					<div class="site-branding header-logo">
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo lwmain_get_image_url_by_filename($main_logo) ?>" style="height:48px" />
@@ -56,7 +56,7 @@
 						</a></h1>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="col-md-9 m-auto align-self-center text-right">
+				<div class="col-md-6 m-auto align-self-center text-right">
 					<div class="cssmenu text-right" id="cssmenu">
 						<?php
 						wp_nav_menu(
