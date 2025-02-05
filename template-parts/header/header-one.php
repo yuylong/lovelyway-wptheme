@@ -41,26 +41,19 @@
 	</div>
 	<?php
 	endif;
+
+	$main_logo = get_theme_mod( 'header_main_logo', 'lw-logo.png' );
+	$sub_logo = get_theme_mod( 'header_sub_logo', 'lw-logo-sub.png' );
 	?>
 	<div class="main-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 align-self-center">
 					<div class="site-branding header-logo">
-						<?php
-						if ( has_custom_logo() ) :
-							the_custom_logo();
-						endif;
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<?php
-							$fashion_blogging_description = get_bloginfo( 'description', 'display' );
-							if ( $fashion_blogging_description || is_customize_preview() ) :
-								?>
-							<p class="site-description"><?php echo esc_html( $fashion_blogging_description ); /* WPCS: xss ok. */ ?></p>
-								<?php
-						endif;
-						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="<?php echo lwmain_get_image_url_by_filename($main_logo) ?>" style="height:48px" />
+							<img src="<?php echo lwmain_get_image_url_by_filename($sub_logo) ?>" style="height:48px" />
+						</a></h1>
 					</div><!-- .site-branding -->
 				</div>
 				<div class="col-md-9 m-auto align-self-center text-right">

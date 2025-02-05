@@ -50,6 +50,24 @@ Kirki::add_field( 'fashion_blogging_config', [
 ] );
 
 Kirki::add_field( 'fashion_blogging_config', [
+    'type'        => 'text',
+    'settings'    => 'header_main_logo',
+    'label'       => esc_html__( 'Header Main Logo', 'fashion-blogging' ),
+    'section'     => 'fashion_blogging_theme_header_settings',
+    'default'     => 'lw-logo.png',
+    'transport'   => 'refresh',
+] );
+
+Kirki::add_field( 'fashion_blogging_config', [
+    'type'        => 'text',
+    'settings'    => 'header_sub_logo',
+    'label'       => esc_html__( 'Header Sub Logo', 'fashion-blogging' ),
+    'section'     => 'fashion_blogging_theme_header_settings',
+    'default'     => 'lw-logo-sub.png',
+    'transport'   => 'refresh',
+] );
+
+Kirki::add_field( 'fashion_blogging_config', [
     'type'        => 'typography',
     'settings'    => 'top_header_title_typography',
     'label'       => esc_html__( 'Top Header Typography', 'fashion-blogging' ),
