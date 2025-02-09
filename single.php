@@ -22,6 +22,15 @@ $s_post_el_is_on = array(
 					the_post();
 					get_template_part( 'template-parts/content/content', 'single' );
 				endwhile; // End of the loop.
+				if( true == $s_post_el_is_on['show_post_author_box'] ) : ?>
+					<div class="post-author">
+						<div class="d-block d-md-flex align-items-center">
+							<div class="author-about">
+								<p><?php echo get_post_meta( get_the_ID(), 'lw_copyright', true ); ?></p>
+							</div>
+						</div>
+					</div>
+				<?php endif;
 				if(true === $s_post_el_is_on['show_post_navigation']): ?>
 				<div class="d-flex single-post-navigation justify-content-between">
 					<?php if (get_previous_post_link()): ?>
@@ -52,21 +61,6 @@ $s_post_el_is_on = array(
 					</div>
 					<?php endif; ?>
 				</div>
-				<?php endif;
-				if( true == $s_post_el_is_on['show_post_author_box'] ) : ?>
-					<div class="post-author">
-						<div class="d-block d-md-flex align-items-center">
-							<div class="author-image">
-								<?php
-								echo get_avatar( get_the_author_meta( 'ID' ), 200, '', '', null );
-								?>
-							</div>
-							<div class="author-about">
-								<h4><?php echo esc_html( get_the_author_meta( 'nickname' ) ); ?></h4>
-								<p><?php echo wp_kses_post( get_the_author_meta( 'description' ) ); ?></p>
-							</div>
-						</div>
-					</div>
 				<?php endif;
 				if (true === $s_post_el_is_on['show_recommend_posts']) :
 					echo '<div class="related-post-wrapper">';
