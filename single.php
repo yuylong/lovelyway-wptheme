@@ -26,7 +26,7 @@ $s_post_el_is_on = array(
 					<div class="post-author">
 						<div class="d-block d-md-flex align-items-center">
 							<div class="author-about">
-								<p><?php echo get_post_meta( get_the_ID(), 'lw_copyright', true ); ?></p>
+								<?php echo get_post_meta( get_the_ID(), 'lw_copyright', true ); ?>
 							</div>
 						</div>
 					</div>

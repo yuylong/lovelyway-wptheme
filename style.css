@@ -8590,7 +8590,7 @@ header.archive-page-header h1.page-title {
 
 .post-author {
     padding: 3px 15px;
-    border: 1px solid #596172;
+    border: 1px solid #fcecdd;
     background: #F4F7FF;
 
 }
@@ -8601,9 +8601,8 @@ header.archive-page-header h1.page-title {
 }
 
 .post-author .author-about {
-    width: 100%;
-    text-align: center;
-    color: #404040;
+    max-width: 100%;
+    color: #676767;
 }
 
 .post-author .follow-me a {
