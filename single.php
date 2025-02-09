@@ -24,7 +24,7 @@ $s_post_el_is_on = array(
 				endwhile; // End of the loop.
 				if( true == $s_post_el_is_on['show_post_author_box'] ) : ?>
 					<div class="post-author">
-						<div class="d-block d-md-flex align-items-center">
+						<div class="d-md-flex align-items-center">
 							<div class="author-about">
 								<?php echo get_post_meta( get_the_ID(), 'lw_copyright', true ); ?>
 							</div>
