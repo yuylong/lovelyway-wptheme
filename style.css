@@ -5806,13 +5806,27 @@ aside.widget-area .widget .widget-title {
 }
 
 .fashion-blogging-standard-post .fashion-blogging-standard-post__full-summery a {
-    color: #ffbb67;
+    color: darkred;
     font-weight: 700;
     text-decoration: underline;
 }
 
 .fashion-blogging-standard-post__full-summery {
     color: #000000;
+}
+
+.fashion-blogging-standard-post__full-summery p {
+    text-indent: 2em;
+}
+
+.fashion-blogging-standard-post__full-summery h2 {
+    color: darkred;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+    text-indent: 4em;
+    line-height: 2;
+    letter-spacing: 0.12em;
 }
 
 .fashion-blogging-standard-post__entry-content {
@@ -8589,10 +8603,10 @@ header.archive-page-header h1.page-title {
 }
 
 .post-author {
+    justify-content: center;
     padding: 3px 15px;
     border: 1px solid #fcecdd;
     background: #F4F7FF;
-
 }
 
 .post-author div.author-image {
