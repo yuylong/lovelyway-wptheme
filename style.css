@@ -950,6 +950,7 @@ a:active {
 --------------------------------------------------------------*/
 .wp-block-image img {
     display: block;
+    margin: 0 auto;
 }
 
 .wp-block-image.alignleft,
