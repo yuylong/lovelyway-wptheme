@@ -28,7 +28,7 @@ Kirki::add_field('fashion_blogging_config', [
     'placeholder' => esc_html__( 'Choose an option', 'fashion-blogging' ),
     'choices'     => array(
         'post' => esc_html__( 'Post', 'fashion-blogging' ),
-        'products' => esc_html__( 'Products', 'fashion-blogging' )
+        'products' => esc_html__( 'Products', 'fashion-blogging' ),
         'topicimg' => esc_html__( 'Topic Image', 'fashion-blogging' )
     ),
 ] );
