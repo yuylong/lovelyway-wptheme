@@ -3,6 +3,7 @@
     
     //get products on sale using wp_query class
     $topic_image = lw_get_latest_image_with_prefix('index-topic-');
+    if ( $topic_image ) :
 ?>
 <div class="post-container">
     <div class="post__wrap-post">
@@ -25,3 +26,8 @@
         </div>
     </div>
 </div>
+<?php
+    else:
+        echo '<p>No topic image found.</p>';
+    endif;
+?>
