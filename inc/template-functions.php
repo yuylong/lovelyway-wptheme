@@ -245,3 +245,46 @@ function lwmain_get_image_url_by_filename($filename) {
         return 'No attachment found with that filename.';
     }
 }
+
+function lw_get_latest_image_with_prefix($prefix) {
+    $args = array(
+        'post_type'      => 'attachment',
+        'post_mime_type' => 'image',
+        'numberposts'    => 1,            // 只获取一张图片
+        'orderby'        => 'date',       // 按日期排序
+        'order'          => 'DESC',       // 降序排列（最新的在前）
+        'meta_query'     => array(
+            array(
+                'key'     => '_wp_attached_file',
+                'value'   => $prefix,
+                'compare' => 'LIKE',
+            ),
+        ),
+    );
+
+    $posts = get_posts($args);
+
+    if (!empty($posts)) {
+        $image_id = $posts[0]->ID; // 获取图片的 ID
+
+        // 获取图片的详细信息
+        $image_url = wp_get_attachment_url($image_id); // 图片 URL
+        $image_title = get_the_title($image_id);      // 图片标题
+        $image_caption = wp_get_attachment_caption($image_id); // 图片说明
+        $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true); // Alt 文本
+        $image_description = $posts[0]->post_content; // 图片描述
+
+        // 将信息存储到数组中
+        $image_info = array(
+            'url'         => $image_url,
+            'title'       => $image_title,
+            'caption'     => $image_caption,
+            'alt'         => $image_alt,
+            'description' => $image_description,
+        );
+
+        return $image_info;
+    }
+
+    return false; // 如果没有找到图片，返回 false
+}

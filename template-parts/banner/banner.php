@@ -3,15 +3,21 @@
  * Fashion Blogging Hero Home two
  */
 
+$banner_post_type = get_theme_mod('select_post_types');
 ?>
-<section id="hero-section" class="<?php (get_theme_mod('select_post_types') == "post") ? "banner-section":"";?>">
+<section id="hero-section" class="<?php ($banner_post_type == "post" || $banner_post_type == "topicimg") ? "banner-section":"";?>">
 <?php
-    if(get_theme_mod('select_post_types') == "post"){
+    if($banner_post_type == "topicimg"){
+        get_template_part( 'template-parts/banner/banner', 'topicimg');
+    }
+?>
+<?php
+    if($banner_post_type == "post"){
         get_template_part( 'template-parts/banner/banner', 'post');
     }
 ?>
 <?php
-    if(get_theme_mod('select_post_types') == "products"){
+    if($banner_post_type == "products"){
     ?>
         <div class="container">
             <div class="row">

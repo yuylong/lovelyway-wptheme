@@ -12,7 +12,7 @@ Kirki::add_field( 'fashion_blogging_config', [
     'settings'    => 'banner_section_on_off',
     'label'       => esc_html__( 'Show/Hide Banner Section', 'fashion-blogging' ),
     'section'     => 'banner_section',
-    'default'     => 0,
+    'default'     => 1,
     'choices'     => [
         'on'  => esc_html__( 'Show', 'fashion-blogging' ),
         'off' => esc_html__( 'Hide', 'fashion-blogging' ),
@@ -24,11 +24,12 @@ Kirki::add_field('fashion_blogging_config', [
     'settings'    => 'select_post_types',
     'label'       => esc_html__( 'Select Post Type', 'fashion-blogging' ),
     'section'     => 'banner_section',
-    'default'     => 'post',
+    'default'     => 'topicimg',
     'placeholder' => esc_html__( 'Choose an option', 'fashion-blogging' ),
     'choices'     => array(
         'post' => esc_html__( 'Post', 'fashion-blogging' ),
         'products' => esc_html__( 'Products', 'fashion-blogging' )
+        'topicimg' => esc_html__( 'Topic Image', 'fashion-blogging' )
     ),
 ] );
 
