@@ -6,25 +6,11 @@
     if ( $topic_image ) :
 ?>
 <div class="post-container">
-    <div class="post__wrap-post">
-        <div>
-            <div class="post__wrap-sale" style="background-image: url('<?php echo esc_url( $topic_image['url'] ); ?>');">
-                <div class="post-content">
-                    <?php
-                    $content = substr(get_the_content(), 0, 250) . '...';
-                    ?>
-                    <div class="post-description">
-                        <div class="desctiption__wrap">
-                            <div class="description__wrap-title">
-                                <h2><?php echo esc_html( $topic_image['caption'] ); ?></h2>
-                            </div>
-                        </div>
-                        <p><?php echo esc_html( $topic_image['description'] ); ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <figure class="wp-block-image aligncenter size-full">
+        <img src="<?php echo esc_url( $topic_image['url'] ); ?>" alt="" class="wp-image-16"/>
+        <figcaption class="wp-element-caption"><?php echo esc_html( $topic_image['caption'] ); ?><br>
+        <?php echo esc_html( $topic_image['description'] ); ?></figcaption>
+    </figure>
 </div>
 <?php
     else:

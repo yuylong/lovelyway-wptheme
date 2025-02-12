@@ -3,7 +3,7 @@
  * Fashion Blogging Hero Home two
  */
 
-$banner_post_type = get_theme_mod('select_post_types');
+$banner_post_type = get_theme_mod('select_post_types', 'topicimg');
 ?>
 <section id="hero-section" class="<?php ($banner_post_type == "post" || $banner_post_type == "topicimg") ? "banner-section":"";?>">
 <?php
