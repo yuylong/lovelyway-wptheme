@@ -161,6 +161,8 @@ function lw_list_images_with_prefix($attrs, $content='index-topic-') {
 			</figure>
 			<?php
 		}
+	} else {
+		echo '<p>No images found.</p>';
 	}
 	wp_reset_postdata();
 }
