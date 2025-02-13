@@ -129,7 +129,7 @@ function fashion_blogging_author_vcard() {
 	return;
 }
 
-function lw_list_images_with_prefix($prefix) {
+function lw_list_images_with_prefix($attrs, $content='index-topic-') {
     $args = array(
         'post_type'      => 'attachment',
         'post_mime_type' => 'image',
@@ -139,7 +139,7 @@ function lw_list_images_with_prefix($prefix) {
         'meta_query'     => array(
             array(
                 'key'     => '_wp_attached_file',
-                'value'   => $prefix,
+                'value'   => $content,
                 'compare' => 'LIKE',
             ),
         ),
