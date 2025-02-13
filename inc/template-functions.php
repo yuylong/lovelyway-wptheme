@@ -145,7 +145,7 @@ function lw_list_images_with_prefix($prefix) {
         ),
     );
 
-    $posts = get_posts($args);
+    $query = new WP_Query($args);
 
 	if ($query->have_posts()) {
 		while ($query->have_posts()) {
