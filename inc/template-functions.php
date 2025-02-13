@@ -162,7 +162,7 @@ function lw_list_images_with_prefix($attrs, $content='index-topic-') {
 			<?php
 		}
 	} else {
-		echo '<p>No images found.</p>';
+		echo '<p>No images found with Prefix ' . $content . '</p>';
 	}
 	wp_reset_postdata();
 }
