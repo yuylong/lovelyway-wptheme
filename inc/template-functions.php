@@ -128,6 +128,43 @@ function fashion_blogging_author_vcard() {
 	<?php
 	return;
 }
+
+function lw_list_images_with_prefix($prefix) {
+    $args = array(
+        'post_type'      => 'attachment',
+        'post_mime_type' => 'image',
+        'numberposts'    => -1,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'meta_query'     => array(
+            array(
+                'key'     => '_wp_attached_file',
+                'value'   => $prefix,
+                'compare' => 'LIKE',
+            ),
+        ),
+    );
+
+    $posts = get_posts($args);
+
+	if ($query->have_posts()) {
+		while ($query->have_posts()) {
+			$query->the_post();
+			$image_url = wp_get_attachment_url(get_the_ID());
+			$image_caption = wp_get_attachment_caption(get_the_ID());
+			$image_description = get_post()->post_content;
+			?>
+			<figure class="wp-block-image aligncenter size-full">
+				<img src="<?php echo esc_url( $image_url ); ?>" alt="" class="wp-image-16" style="max-height:520px;"/>
+				<figcaption class="wp-element-caption" ><?php echo esc_html( $image_caption ); ?><br>
+				<?php echo esc_html( $image_description ); ?></figcaption>
+			</figure>
+			<?php
+		}
+	}
+	wp_reset_postdata();
+}
+
 function fashion_blogging_before_default_page_markup() {
 	if (is_home()) {
 		$sidebar_layouts = get_theme_mod( 'blog_page_sidebar', 'no' );
@@ -154,8 +191,11 @@ function fashion_blogging_before_default_page_markup() {
 				<div class="row">
 					<div class="<?php echo esc_attr( $blogcontent ); ?>">
 	<?php
+
+	add_shortcode('list_topicimg', 'lw_list_images_with_prefix');
 }
 add_action( 'fashion_blogging_before_default_page', 'fashion_blogging_before_default_page_markup' );
+
 function fashion_blogging_after_default_page_markup() {
 
 	if (is_home()) {
