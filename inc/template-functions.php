@@ -133,7 +133,7 @@ function lw_list_images_with_prefix($attrs, $content='index-topic-') {
     $args = array(
         'post_type'      => 'attachment',
         'post_mime_type' => 'image',
-        'posts_per_page' => -1,
+        'numberposts'    => -1,
         'orderby'        => 'date',
         'order'          => 'DESC',
         'meta_query'     => array(
@@ -145,14 +145,14 @@ function lw_list_images_with_prefix($attrs, $content='index-topic-') {
         ),
     );
 
-    $query = new WP_Query($args);
+	$posts = get_posts($args);
 
-	if ($query->have_posts()) {
-		while ($query->have_posts()) {
-			$query->the_post();
-			$image_url = wp_get_attachment_url(get_the_ID());
-			$image_caption = wp_get_attachment_caption(get_the_ID());
-			$image_description = get_post()->post_content;
+    if (!empty($posts)) {
+		for ($i = 0; $i < count($posts); $i++) {
+			$image_id = $posts[$i]->ID;
+			$image_url = wp_get_attachment_url($image_id);
+			$image_caption = wp_get_attachment_caption($image_id);
+			$image_description = $posts[$i]->post_content;
 			?>
 			<figure class="wp-block-image aligncenter size-full">
 				<img src="<?php echo esc_url( $image_url ); ?>" alt="" class="wp-image-16" style="max-height:520px;"/>
