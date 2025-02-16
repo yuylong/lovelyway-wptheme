@@ -36,7 +36,7 @@ function fashion_blogging_cats_related_post() {
     if($related_cats_post->have_posts()):
     	?>
         <div class="recommended-post-section mt-5 mb-5">
-			<h4 class="related-post-title text-center"><?php esc_html( '推荐文字', 'fashion-blogging' ); ?></h4>
+			<h4 class="related-post-title text-center">推荐文字</h4>
         	<?php
         	echo '<div class="related-post-slider row">';
              while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
