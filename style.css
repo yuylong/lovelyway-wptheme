@@ -8253,8 +8253,8 @@ header.site-header {
 
 header.archive-page-header {
     border-bottom: 1px solid #f3f3f8;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 header.archive-page-header .archive-description {
@@ -8262,11 +8262,13 @@ header.archive-page-header .archive-description {
 }
 
 header.archive-page-header span {
-    color: #ffbb67;
+    color: #aa2d2d;;
 }
 
 header.archive-page-header h1.page-title {
     margin-top: 0;
+    font-size: 1.55rem;
+    color: #4a4a4a;
 }
 
 .page-banner-area {
