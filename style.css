@@ -680,19 +680,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-    color: #ffbb67;
+    color: #aa2d2d;
     text-decoration: none;
 }
 
 a:visited {
-    color: #ffbb67;
+    color: #aa2d2d;
     text-decoration: underline;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #ffbb67;
+    color: #aa2d2d;
     text-decoration: underline;
 }
 
@@ -8717,9 +8717,9 @@ header.archive-page-header h1.page-title {
 }
 
 .single-post-navigation {
-margin-bottom: 50px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e1e1e1;
     margin-top: 50px;
 
 }
@@ -8813,14 +8813,14 @@ margin-bottom: 50px;
 }
 
 .previous-post .postarrow i {
-    margin-right: 1rem;
+    margin-right: 8px;
 }
 
 .single-post-navigation .postarrow {
     display: inline-block;
     border-radius: 0;
-    padding: .2rem 0;
-    margin-bottom: .5rem;
+    padding-top: .1rem;
+    margin-bottom: 0;
     border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
@@ -8831,7 +8831,7 @@ margin-bottom: 50px;
 }
 
 .single-post-navigation .next-post .postarrow i {
-    margin-left: 1rem;
+    margin-left: 8px;
 }
 
 .single-post-navigation a {
@@ -9172,6 +9172,7 @@ form#commentform p.form-submit button.btn-primary {
 
 .related-post-wrapper .related-post-title {
     margin-bottom: 1.5rem;
+    letter-spacing: 0.64em;
 }
 
 .related-post-wrapper .related-post-sldider .fashion-blogging-standard-post__post-title h4 {

@@ -38,7 +38,7 @@ $s_post_el_is_on = array(
 							<?php
 								$prev_post = get_adjacent_post(false, '', true);
 							?>
-							<div class="postarrow">
+							<div class="postarrow" style="letter-spacing: 4px;">
 								<a href="<?php echo get_permalink($prev_post->ID); ?>">
 									<i class="fa fa-long-arrow-left"></i>
 									上一篇
@@ -53,7 +53,7 @@ $s_post_el_is_on = array(
 						<?php 
 							$next_post = get_adjacent_post(false, '', false);
 						?>
-						<div class="postarrow">
+						<div class="postarrow" style="letter-spacing: 4px;">
 							<a href="<?php echo get_permalink($next_post->ID); ?>">
 								下一篇
 								<i class="fa fa-long-arrow-right"></i>
