@@ -40,7 +40,8 @@ $s_post_el_is_on = array(
 							?>
 							<div class="postarrow">
 								<a href="<?php echo get_permalink($prev_post->ID); ?>">
-									<i class="fa fa-long-arrow-left"></i><?php echo esc_html( '上一篇', 'fashion-blogging' ); ?>
+									<i class="fa fa-long-arrow-left"></i>
+									上一篇
 								</a>
 							</div>
 							<?php echo get_previous_post_link('%link');?>
@@ -54,7 +55,8 @@ $s_post_el_is_on = array(
 						?>
 						<div class="postarrow">
 							<a href="<?php echo get_permalink($next_post->ID); ?>">
-								<?php echo esc_html( '下一篇', 'fashion-blogging' ); ?><i class="fa fa-long-arrow-right"></i>
+								下一篇
+								<i class="fa fa-long-arrow-right"></i>
 							</a>
 						</div>
 						<?php echo get_next_post_link('%link'); ?>
