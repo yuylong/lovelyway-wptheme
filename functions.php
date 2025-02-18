@@ -166,7 +166,7 @@ if ( class_exists( 'woocommerce' ) ) {
  */
 function lwmain_custom_posts_per_page( $query ) {
 	if ( ! is_admin() && $query->is_main_query() ) {
-		if ( is_archive() ) {
+		if ( $query->get( 'posts_per_page', 10 ) > 1 ) {
 			$posts_per_page = get_theme_mod( 'posts_per_page', 12 );
 			$query->set( 'posts_per_page', $posts_per_page );
 		}
