@@ -8695,14 +8695,14 @@ header.archive-page-header h1.page-title {
     display: block;
     font-size: 14px;
     font-weight: 700;
-    background: #ffbb67;
+    background: #505050;
 }
 
 .pagination li.page-item a:hover,
 .pagination li.page-item a.current,
 .pagination li.page-item span:hover,
 .pagination li.page-item span.current {
-    background-color: #000000;
+    background-color: #aa2d2d;
     color: #ffffff;
 }
 

@@ -14,7 +14,7 @@ Kirki::add_field( 'fashion_blogging_config', [
 	'transport'   => 'auto',
 	'output' => array(
 		array(
-			'element'  => '.fashion-blogging-standard-post__overlay-category span.cat-links a, .widget .tagcloud a, blockquote.wp-block-quote.is-style-red-qoute, .scrooltotop a:hover, .discover-me-button a, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce ul.products li.product .onsale, .woocommerce span.onsale, .pagination li.page-item a, .pagination li.page-item span,.fashion-blogging-standard-post__blog-meta .cat-links a, .post_categories_on_thumbnail .cat-links a',
+			'element'  => '.fashion-blogging-standard-post__overlay-category span.cat-links a, .widget .tagcloud a, blockquote.wp-block-quote.is-style-red-qoute, .scrooltotop a:hover, .discover-me-button a, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce ul.products li.product .onsale, .woocommerce span.onsale, .fashion-blogging-standard-post__blog-meta .cat-links a, .post_categories_on_thumbnail .cat-links a',
 			'property' => 'background-color',
 		),
 		array(
