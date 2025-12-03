@@ -968,8 +968,12 @@ a:active {
 .wp-block-image .alignright figcaption {
     max-width: 100%;
     width: 100%;
+}
+
+figcaption.wp-element-caption {
+    color: #444444;
     text-align: center;
-    font-size: small;
+    font-size: 0.875rem;
 }
 
 /*--------------------------------------------------------------
