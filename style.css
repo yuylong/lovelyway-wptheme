@@ -5021,13 +5021,13 @@ aside.widget-area .widget .widget-title {
 
 .fashion-blogging-standard-post__full-summery p {
     text-indent: 2em;
-    font-size: 1.32em;
+    font-size: 1.24rem;
 }
 
 .fashion-blogging-standard-post__full-summery h2 {
     color: darkred;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     text-align: left;
     text-indent: 2.5em;
     line-height: 2;
@@ -6082,6 +6082,10 @@ a.fa.fa-search.searchicon:focus {
     color: #000 !important;
 }
 
+
+#cssmenu.small-screen .menu-item-has-children:after {
+    display: none;
+}
 
 #cssmenu.small-screen .submenu-button {
     position: absolute;
