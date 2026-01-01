@@ -2,7 +2,7 @@
     "use strict";
     if ($.fn.menumaker) {
         let menuArgs = {
-            title: "Menu", // The text of the button which toggles the menu
+            title: "网站菜单", // The text of the button which toggles the menu
             breakpoint: 767, // The breakpoint for switching to the mobile view
             format: "multitoggle" // It takes three values: dropdown for a simple toggle menu, select for select list menu, multitoggle for a menu where each submenu can be toggled separately
         };
