@@ -521,7 +521,7 @@ html {
 }
 
 body {
-    background: #ffffff;
+    background: #aa2d2d;
     /* Fallback for when there is no custom background color defined. */
 }
 
@@ -4608,9 +4608,13 @@ blockquote.wp-block-quote.is-style-red-qoute p {
     clip: auto;
 }
 
+.site-content {
+    background: #ffffff;
+}
+
 .site-main {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.2rem;
+    padding-bottom: 1rem;
 }
 
 .lg-display-none {
