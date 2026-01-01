@@ -3,7 +3,7 @@
     $.fn.menumaker = function(options) {
         var cssmenu = $(this),
             settings = $.extend({
-                title: "Menu",
+                title: "网站菜单",
                 format: "dropdown",
                 breakpoint: 768,
                 sticky: false

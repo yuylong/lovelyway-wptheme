@@ -6029,7 +6029,7 @@ a.fa.fa-search.searchicon:focus {
 #cssmenu.small-screen #menu-button {
     display: block;
     padding: 1.0625rem 0;
-    color: #000000;
+    color: #eeeeee;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
