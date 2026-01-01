@@ -30,7 +30,7 @@ $show_footer_social_links = get_theme_mod('show_footer_social_links', false);
 							<div style="margin-right:8px;margin-left:8px;">
 								<a href="https://beian.miit.gov.cn" target="_blank">辽ICP备2024019965号-1</a>
 							</div>|
-							<div style="margin-left:8px;">Copyright © 2023-2025 Yulong Yu. All rights reserved.</div>
+							<div style="margin-left:8px;">Copyright © 2023-2026 Yulong Yu. All rights reserved.</div>
 							</div>
 						</div>
 					</div><!-- .site-info -->
